@@ -16,7 +16,7 @@ BuildRequires:	libxml-devel
 BuildRequires:	rox-CLib-devel >= 0.1.4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define   _appsdir  %{_libdir}/ROX-apps
+%define		_appsdir	%{_libdir}/ROX-apps
 
 %description
 Display a coloured context diff between two files.
