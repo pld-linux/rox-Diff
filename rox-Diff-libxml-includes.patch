@@ -1,0 +1,14 @@
+diff -urN aaa/Diff/src/main.c Diff/src/main.c
+--- aaa/Diff/src/main.c	Tue May 14 12:36:45 2002
++++ Diff/src/main.c	Fri Jun 21 22:52:28 2002
+@@ -41,8 +41,8 @@
+ #include "infowin.h"
+ 
+ #ifdef HAVE_XML
+-#include <tree.h>
+-#include <parser.h>
++#include <libxml/tree.h>
++#include <libxml/parser.h>
+ #endif
+ 
+ #if defined(HAVE_XML) && LIBXML_VERSION>=20400
