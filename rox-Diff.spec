@@ -2,7 +2,7 @@
 %define _name Diff
 %define _platform %(echo `uname -s`-`uname -m|sed 's/i.86/ix86/'`)
 Summary:	Display a coloured context diff between two files
-Summary(pl):	ROX-Diff wy¶wietla kolorow± ró¿nice miêdzy dwoma plikami
+Summary(pl):	ROX-Diff wy¶wietla pokolorowane ró¿nice miêdzy dwoma plikami
 Name:		rox-%{_name}
 Version:	1.0.2
 Release:	1
@@ -12,8 +12,8 @@ Source0:	http://www.kerofin.demon.co.uk/rox/%{_name}-%{version}.tgz
 Patch0:		%{name}-libxml-includes.patch
 Patch1:		%{name}-paths-fix.patch
 URL:		http://www.kerofin.demon.co.uk/rox/utils.html#Diff
-BuildRequires:	rox-CLib-devel >= 0.1.4
 BuildRequires:	libxml-devel
+BuildRequires:	rox-CLib-devel >= 0.1.4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -23,7 +23,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Display a coloured context diff between two files.
 
 %description -l pl
-ROX-Diff wy¶wietla kolorow± ró¿nice miêdzy dwoma plikami.
+ROX-Diff wy¶wietla pokolorowane ró¿nice miêdzy dwoma plikami.
 
 %prep
 %setup -q -n %{_name}
