@@ -1,7 +1,7 @@
 %define _name Diff
 %define _platform %(echo `uname -s`-`uname -m|sed 's/i.86/ix86/'`)
 Summary:	Display a coloured context diff between two files
-Summary(pl):	ROX-Diff wy�wietla pokolorowane r�nice mi�dzy dwoma plikami
+Summary(pl.UTF-8):   ROX-Diff wyświetla pokolorowane różnice między dwoma plikami
 Name:		rox-%{_name}
 Version:	1.0.2
 Release:	2
@@ -21,8 +21,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Display a coloured context diff between two files.
 
-%description -l pl
-ROX-Diff wy�wietla pokolorowane r�nice mi�dzy dwoma plikami.
+%description -l pl.UTF-8
+ROX-Diff wyświetla pokolorowane różnice między dwoma plikami.
 
 %prep
 %setup -q -n %{_name}
