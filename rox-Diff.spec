@@ -43,7 +43,6 @@ install %{_platform}/Diff $RPM_BUILD_ROOT%{_appsdir}/%{_name}/%{_platform}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
-rm -f install
 
 %files
 %defattr(644,root,root,755)
