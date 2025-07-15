@@ -26,8 +26,8 @@ ROX-Diff wyświetla pokolorowane różnice między dwoma plikami.
 
 %prep
 %setup -q -n %{_name}
-%patch0 -p1
-%patch1 -p1
+%patch -P0 -p1
+%patch -P1 -p1
 
 %build
 ./AppRun --compile
